@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clubs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            background-size: cover;
+            background-repeat: no-repeat;
+            overflow: hidden;
+            background-attachment: fixed;
+            color: #fff;
+            
+        }
+        .container {
+            text-align: center;
+            margin: 35px;
+            background-color: #2d2d2d;
+            padding: 20px;
+            border-radius: 10px;
+            position: relative;
+            height: 85vh;
+        }
+        h1 {
+            margin-bottom: 30px;
+        }
+        .tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .tab {
+            margin: 0 100px;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-bottom: 2px solid transparent;
+        }
+        .tab.active {
+            border-bottom: 2px solid orange;
+            transition: .75s;
+        }
+        .clubs {
+            display: none;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+        .clubs.active {
+            display: grid;
+        }
+        .club-button {
+            padding: 20px;
+            background-color: transparent;
+            color: #fff;
+            border: 2px solid #fff;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 1.5s, color 1.5s;
+        }
+        .club-button:hover {
+            background-color: #fff;
+            color: #2c2c2c;
+            border: 2px solid #2c2c2c;
+        }
+        @media (max-width: 480px) {
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(images/b2.jpg);
+            background-size: cover;
+            overflow: scroll;
+            color: #fff;
+        
+        }
+        .container {
+            text-align: center;
+            margin: 35px;
+            padding: 20px;
+            border-radius: 10px;
+            position: relative;
+            height: 100vh;
+        }
+        h1 {
+            margin-bottom: 30px;
+            justify-self: center;
+            position: relative;
+            font-size: 30px;
+            
+        }
+        .tabs {
+            display: inline-flex;
+            justify-items: center;
+            margin-bottom: 20px;
+        }
+        .tab {
+            margin: 0 100px;
+            padding: 0px 10px;
+            cursor: pointer;
+            border-bottom: 2px solid transparent;
+            justify-content: center;
+            
+        }
+        .tab.active {
+            border-bottom: 2px solid orange;
+            transition: .75s;
+        }
+        .clubs {
+            display: none;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        .clubs.active {
+            display: grid;
+            
+        }
+        .club-button {
+            padding: 30px 40px;
+            background-color: transparent;
+            color: #fff;
+            border: 2px solid #fff;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 1.5s, color 1.5s;
+            width: 250px;
+            
+        }
+        .club-button:hover {
+            background-color: #fff;
+            color: #2c2c2c;
+            border: 2px solid #2c2c2c;
+        }
+        .clubs.active {
+            position: absolute;
+           
+        }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Clubs</h1>  <!-- Title-->
+        <div class="tabs">
+            <div id="wednesdayTab" class="tab active" onclick="showClubs('wednesday')">Wednesday Clubs</div>
+            <div id="nonWednesdayTab" class="tab" onclick="showClubs('nonWednesday')">Non-Wednesday Clubs</div>
+        </div>
+        <div id="wednesdayClubs" class="clubs active">
+            
+            <button class="club-button" onclick="redirectToPage('club1.html')">First Aid</button>
+            <button class="club-button" onclick="redirectToPage('club2.html')">Interact</button>
+            <button class="club-button" onclick="redirectToPage('club3.html')">LEO</button>
+            <button class="club-button" onclick="redirectToPage('club4.html')">Visual Arts</button>
+            <button class="club-button" onclick="redirectToPage('club5.html')">Wildlife Club</button>
+            <button class="club-button" onclick="redirectToPage('club6.html')">Peer Counselling</button>
+            <button class="club-button" onclick="redirectToPage('club7.html')">Eco Club</button>
+            <button class="club-button" onclick="redirectToPage('club8.html')">Book Club</button>
+            <button class="club-button" onclick="redirectToPage('club9.html')">Science Club</button>
+            <button class="club-button" onclick="redirectToPage('club10.html')">Debate Club</button>
+            <button class="club-button" onclick="redirectToPage('club11.html')">Swahili Club</button>
+            <button class="club-button" onclick="redirectToPage('club12.html')">GYM</button>
+            <button class="club-button" onclick="redirectToPage('club13.html')">Board Games</button>
+            <button class="club-button" onclick="redirectToPage('club14.html')">Football</button>
+            <button class="club-button" onclick="redirectToPage('club15.html')">Racquet Games</button>
+            <button class="club-button" onclick="redirectToPage('club16.html')">BasketBall/VolleyBall</button>
+            <button class="club-button" onclick="redirectToPage('club17.html')">Media Hub</button>
+            <button class="club-button" onclick="redirectToPage('club18.html')">Current Affairs</button>
+            <button class="club-button" onclick="redirectToPage('club19.html')">Entertainment Club</button>
+            
+        </div>
+        <div id="nonWednesdayClubs" class="clubs">
+            
+            <button class="club-button" onclick="redirectToPage('clubA.html')">Public Speaking</button>
+            <button class="club-button" onclick="redirectToPage('clubB.html')">Mountaineering</button>
+            <button class="club-button" onclick="redirectToPage('clubC.html')">Touch Of Humanity</button>
+            <button class="club-button" onclick="redirectToPage('clubD.html')">Presidential Award</button>
+            <button class="club-button" onclick="redirectToPage('clubE.html')">EAMUN</button>
+            <button class="club-button" onclick="redirectToPage('clubF.html')">World Scholars Cup</button>
+            
+        </div>
+    </div>
+
+    <script>
+        function showClubs(type) {
+           
+            var wednesdayTab = document.getElementById('wednesdayTab');
+            var nonWednesdayTab = document.getElementById('nonWednesdayTab');
+            var wednesdayClubs = document.getElementById('wednesdayClubs');
+            var nonWednesdayClubs = document.getElementById('nonWednesdayClubs');
+
+            // Set active class based on type
+            if (type === 'wednesday') {
+                wednesdayTab.classList.add('active');
+                nonWednesdayTab.classList.remove('active');
+                wednesdayClubs.classList.add('active');
+                nonWednesdayClubs.classList.remove('active');
+            } else {
+                wednesdayTab.classList.remove('active');
+                nonWednesdayTab.classList.add('active');
+                wednesdayClubs.classList.remove('active');
+                nonWednesdayClubs.classList.add('active');
+            }
+        }
+
+        function redirectToPage(pageUrl) {
+            window.location.href = pageUrl;
+        }
+    </script>
+</body>
+</html>
