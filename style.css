@@ -280,9 +280,6 @@ nav ul li a:hover::after{
   visibility: hidden;
 }
 .menu-icon{
-  display: block;
-}
-.close-icon{
   display: none;
 }
 
