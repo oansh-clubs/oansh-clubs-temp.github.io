@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLUBS PORTAL - FINAL</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./logo2.png" />
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <img src="./logo(MH).png" class="logo">
+            <img src="./logo2.png" class="s-logo">
+            <div class="nav-links">
+              <i class="fa fa-times-circle"></i>
+              <ul id="menu-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./Clubs.html">Clubs</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Credits</a></li>
+                <li><a href="#" class="contact">Contact</a></li>
+              </ul>
+            </div>
+            <div>
+                <a href="#" class="c-btn">Contact</a>
+                <a href="#" class="r-btn">Register</a>
+            </div>
+            <i class="fa fa-bars"></i>
+        </nav>
+        <div class="content">
+            <h1>OSHWAL SENIOR HIGH<br>CLUBS PORTAL</h1>
+            <p>Find your club today</p>
+        </div>
+        <div class="R">
+            <a href="https://oanmediahub.github.io/index.html"><button class="animated-button">
+                <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                  ></path>
+                </svg>
+                <span class="text">Register Now</span>
+                <span class="circle"></span>
+                <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                  ></path>
+                </svg>
+              </button></a>
+        </div>
+        <img src="./logo2.png" class="oshwal-logo">
+        <img src="./oshwal logo.png" class="oshwal2-logo">
+
+    </div>
+<script>
+  let navbar = document.querySelector("nav");
+  let menuLinks = document.getElementById("menu-links");
+
+  function toogleMenu(){
+    menuLinks.classList.toggle("show-menu");
+  }
+
+  window.onscroll = function(){
+    if(window.scrollY > 0){
+      navbar.style.background = "black";
+    }else{
+      navbar.style.background = "transparent";
+    }
+  }
+</script>
+</body>
+</html>
