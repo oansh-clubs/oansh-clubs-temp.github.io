@@ -283,7 +283,7 @@ nav ul li a:hover::after{
   display: block;
 }
 .close-icon{
-  display: block;
+  display: none;
 }
 
 .contact{
